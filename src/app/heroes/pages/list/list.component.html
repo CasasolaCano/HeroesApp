@@ -3,11 +3,11 @@
 
 <br>
 
-<div fxLayout="row wrap">
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
 
-    <div fxFlex="20">
+    <div fxFlex="20" fxFlex.sm="30" fxFlex.xl="15" *ngFor="let heroe of heroes">
 
-        <mat-card *ngFor="let heroe of heroes">
+        <mat-card>
             <mat-card-header>
                 <mat-card-title> {{heroe.superhero}} </mat-card-title>
                 <mat-card-subtitle> {{heroe.alter_ego}} </mat-card-subtitle>

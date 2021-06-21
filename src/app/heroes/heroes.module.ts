@@ -13,6 +13,7 @@ import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
 import { HeroeCardComponent } from './components/heroe-card/heroe-card.component';
+import { ImagePipe } from './pipes/image-pipe.pipe';
 
 
 
@@ -25,7 +26,8 @@ import { HeroeCardComponent } from './components/heroe-card/heroe-card.component
     HeroeComponent,
     HomeComponent,
     ListComponent,
-    HeroeCardComponent
+    HeroeCardComponent,
+    ImagePipe
   ],
   imports: [
     CommonModule,

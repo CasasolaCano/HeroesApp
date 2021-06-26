@@ -6,6 +6,7 @@ import { AddComponent } from './pages/add/add.component';
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material/material.module';
+import { FormsModule } from '@angular/forms';
 
 
 import { SearchComponent } from './pages/search/search.component';
@@ -31,9 +32,10 @@ import { ImagePipe } from './pipes/image-pipe.pipe';
   ],
   imports: [
     CommonModule,
+    FlexLayoutModule,
+    FormsModule,
     MaterialModule,
-    HeroesRoutingModule,
-    FlexLayoutModule
+    HeroesRoutingModule
   ]
 })
 export class HeroesModule { }
